@@ -1,0 +1,35 @@
+(i__main__
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Consumer Goods'
+sS'name'
+p4
+S'ITX.MC'
+p5
+sS'float_shares'
+p6
+S'N/A'
+p7
+sS'symbol'
+p8
+S'ITX.MC'
+p9
+sS'start_date'
+p10
+S'2001-05-24'
+p11
+sS'currency'
+p12
+S'T4.'
+p13
+sS'industry'
+p14
+S'Textile - Apparel Clothing'
+sS'shares_outstanding'
+p15
+S'N/A'
+p16
+sb.

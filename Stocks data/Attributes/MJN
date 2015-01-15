@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Consumer Goods'
+p4
+sS'name'
+p5
+S'Mead Johnson Nutr'
+p6
+sS'float_shares'
+p7
+S'   201,304,000'
+p8
+sS'symbol'
+p9
+S'MJN'
+p10
+sS'start_date'
+p11
+S'2009-02-11'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Processed & Packaged Goods'
+p16
+sS'shares_outstanding'
+p17
+S'   202,030,000'
+p18
+sb.

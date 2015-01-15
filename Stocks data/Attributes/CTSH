@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Technology'
+p4
+sS'name'
+p5
+S'Cognizant Technol'
+p6
+sS'float_shares'
+p7
+S'   571,728,000'
+p8
+sS'symbol'
+p9
+S'CTSH'
+p10
+sS'start_date'
+p11
+S'1998-06-19'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Business Software & Services'
+p16
+sS'shares_outstanding'
+p17
+S'   607,924,000'
+p18
+sb.

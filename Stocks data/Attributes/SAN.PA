@@ -1,0 +1,36 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Healthcare'
+p4
+sS'name'
+p5
+S'SANOFI'
+p6
+sS'float_shares'
+p7
+S'  1,178,366,000'
+p8
+sS'symbol'
+p9
+S'SAN.PA'
+p10
+sS'start_date'
+p11
+S'2000-01-03'
+sS'currency'
+p12
+S'EUR'
+p13
+sS'industry'
+p14
+S'Drug Manufacturers - Major'
+p15
+sS'shares_outstanding'
+p16
+S'  1,312,109,000'
+p17
+sb.

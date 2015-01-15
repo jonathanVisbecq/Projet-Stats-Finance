@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Technology'
+p4
+sS'name'
+p5
+S'NVIDIA Corporatio'
+p6
+sS'float_shares'
+p7
+S'   515,046,000'
+p8
+sS'symbol'
+p9
+S'NVDA'
+p10
+sS'start_date'
+p11
+S'1999-01-22'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Semiconductor - Specialized'
+p16
+sS'shares_outstanding'
+p17
+S'   541,915,000'
+p18
+sb.

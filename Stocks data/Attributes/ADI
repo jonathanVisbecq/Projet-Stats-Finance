@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Technology'
+p4
+sS'name'
+p5
+S'Analog Devices, I'
+p6
+sS'float_shares'
+p7
+S'   311,381,000'
+p8
+sS'symbol'
+p9
+S'ADI'
+p10
+sS'start_date'
+p11
+S'1984-07-19'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Semiconductor - Integrated Circuits'
+p16
+sS'shares_outstanding'
+p17
+S'   314,212,000'
+p18
+sb.

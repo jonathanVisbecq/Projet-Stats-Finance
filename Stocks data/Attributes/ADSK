@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Technology'
+p4
+sS'name'
+p5
+S'Autodesk, Inc.'
+p6
+sS'float_shares'
+p7
+S'   226,434,000'
+p8
+sS'symbol'
+p9
+S'ADSK'
+p10
+sS'start_date'
+p11
+S'1985-07-01'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Technical & System Software'
+p16
+sS'shares_outstanding'
+p17
+S'   227,236,000'
+p18
+sb.

@@ -1,0 +1,32 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S' '
+sS'name'
+p4
+S'LSE'
+p5
+sS'float_shares'
+p6
+S'N/A'
+p7
+sS'symbol'
+p8
+S'LSE'
+p9
+sS'start_date'
+p10
+S' '
+sS'currency'
+p11
+NsS'industry'
+p12
+S' '
+sS'shares_outstanding'
+p13
+S'N/A'
+p14
+sb.

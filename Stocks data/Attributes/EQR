@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Financial'
+p4
+sS'name'
+p5
+S'Equity Residentia'
+p6
+sS'float_shares'
+p7
+S'   354,435,000'
+p8
+sS'symbol'
+p9
+S'EQR'
+p10
+sS'start_date'
+p11
+S'1993-08-12'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'REIT - Residential'
+p16
+sS'shares_outstanding'
+p17
+S'   362,208,000'
+p18
+sb.

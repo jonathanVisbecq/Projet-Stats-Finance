@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Healthcare'
+p4
+sS'name'
+p5
+S'SHIRE'
+p6
+sS'float_shares'
+p7
+S'   490,604,000'
+p8
+sS'symbol'
+p9
+S'SHP.L'
+p10
+sS'start_date'
+p11
+S'1996-02-15'
+p12
+sS'currency'
+p13
+S'GBp'
+p14
+sS'industry'
+p15
+S'Biotechnology'
+p16
+sS'shares_outstanding'
+p17
+S'   587,599,000'
+p18
+sb.

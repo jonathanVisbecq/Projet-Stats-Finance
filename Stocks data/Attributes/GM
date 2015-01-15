@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Consumer Goods'
+p4
+sS'name'
+p5
+S'General Motors Co'
+p6
+sS'float_shares'
+p7
+S'  1,354,573,000'
+p8
+sS'symbol'
+p9
+S'GM'
+p10
+sS'start_date'
+p11
+S'2010-11-18'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Auto Manufacturers - Major'
+p16
+sS'shares_outstanding'
+p17
+S'  1,606,696,000'
+p18
+sb.

@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Financial'
+p4
+sS'name'
+p5
+S'PNC Financial Ser'
+p6
+sS'float_shares'
+p7
+S'   526,130,000'
+p8
+sS'symbol'
+p9
+S'PNC'
+p10
+sS'start_date'
+p11
+S'1990-01-02'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Money Center Banks'
+p16
+sS'shares_outstanding'
+p17
+S'   528,000,000'
+p18
+sb.

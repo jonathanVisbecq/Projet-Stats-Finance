@@ -1,0 +1,36 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Financial'
+p4
+sS'name'
+p5
+S'Citigroup, Inc. C'
+p6
+sS'float_shares'
+p7
+S'  3,022,683,000'
+p8
+sS'symbol'
+p9
+S'C'
+sS'start_date'
+p10
+S'1977-01-03'
+p11
+sS'currency'
+p12
+S'USD'
+p13
+sS'industry'
+p14
+S'Money Center Banks'
+p15
+sS'shares_outstanding'
+p16
+S'  3,029,500,000'
+p17
+sb.

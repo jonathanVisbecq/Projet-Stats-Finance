@@ -1,0 +1,36 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Financial'
+p4
+sS'name'
+p5
+S'Visa Inc.'
+p6
+sS'float_shares'
+p7
+S'   500,453,000'
+p8
+sS'symbol'
+p9
+S'V'
+sS'start_date'
+p10
+S'2008-03-19'
+p11
+sS'currency'
+p12
+S'USD'
+p13
+sS'industry'
+p14
+S'Credit Services'
+p15
+sS'shares_outstanding'
+p16
+S'   628,260,000'
+p17
+sb.

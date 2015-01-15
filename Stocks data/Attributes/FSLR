@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Technology'
+p4
+sS'name'
+p5
+S'First Solar, Inc.'
+p6
+sS'float_shares'
+p7
+S'    73,312,000'
+p8
+sS'symbol'
+p9
+S'FSLR'
+p10
+sS'start_date'
+p11
+S'2006-11-17'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Semiconductor - Specialized'
+p16
+sS'shares_outstanding'
+p17
+S'   100,193,000'
+p18
+sb.

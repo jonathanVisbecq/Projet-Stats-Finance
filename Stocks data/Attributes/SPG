@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Financial'
+p4
+sS'name'
+p5
+S'Simon Property Gr'
+p6
+sS'float_shares'
+p7
+S'   307,953,000'
+p8
+sS'symbol'
+p9
+S'SPG'
+p10
+sS'start_date'
+p11
+S'1993-12-14'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'REIT - Retail'
+p16
+sS'shares_outstanding'
+p17
+S'   310,782,000'
+p18
+sb.

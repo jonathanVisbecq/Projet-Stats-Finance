@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Services'
+p4
+sS'name'
+p5
+S'C.H. Robinson Wor'
+p6
+sS'float_shares'
+p7
+S'   145,509,000'
+p8
+sS'symbol'
+p9
+S'CHRW'
+p10
+sS'start_date'
+p11
+S'1997-10-16'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Air Delivery & Freight Services'
+p16
+sS'shares_outstanding'
+p17
+S'   146,645,000'
+p18
+sb.

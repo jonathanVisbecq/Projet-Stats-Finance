@@ -1,0 +1,36 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Consumer Goods'
+p4
+sS'name'
+p5
+S'Kellogg Company C'
+p6
+sS'float_shares'
+p7
+S'   327,370,000'
+p8
+sS'symbol'
+p9
+S'K'
+sS'start_date'
+p10
+S'1984-12-17'
+p11
+sS'currency'
+p12
+S'USD'
+p13
+sS'industry'
+p14
+S'Processed & Packaged Goods'
+p15
+sS'shares_outstanding'
+p16
+S'   355,000,000'
+p17
+sb.

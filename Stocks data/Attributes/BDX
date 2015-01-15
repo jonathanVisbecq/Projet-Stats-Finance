@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Healthcare'
+p4
+sS'name'
+p5
+S'Becton, Dickinson'
+p6
+sS'float_shares'
+p7
+S'   190,696,000'
+p8
+sS'symbol'
+p9
+S'BDX'
+p10
+sS'start_date'
+p11
+S'1983-04-06'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Medical Instruments & Supplies'
+p16
+sS'shares_outstanding'
+p17
+S'   191,835,000'
+p18
+sb.

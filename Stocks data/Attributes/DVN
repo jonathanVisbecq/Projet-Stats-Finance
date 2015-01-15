@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Basic Materials'
+p4
+sS'name'
+p5
+S'Devon Energy Corp'
+p6
+sS'float_shares'
+p7
+S'   383,727,000'
+p8
+sS'symbol'
+p9
+S'DVN'
+p10
+sS'start_date'
+p11
+S'1992-03-17'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Independent Oil & Gas'
+p16
+sS'shares_outstanding'
+p17
+S'   409,100,000'
+p18
+sb.

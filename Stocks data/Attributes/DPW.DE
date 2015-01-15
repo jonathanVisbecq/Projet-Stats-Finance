@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Services'
+p4
+sS'name'
+p5
+S'DEUTSCHE POST N'
+p6
+sS'float_shares'
+p7
+S'           0'
+p8
+sS'symbol'
+p9
+S'DPW.DE'
+p10
+sS'start_date'
+p11
+S'2000-11-20'
+p12
+sS'currency'
+p13
+S'EUR'
+p14
+sS'industry'
+p15
+S'Air Delivery & Freight Services'
+p16
+sS'shares_outstanding'
+p17
+S'  1,231,578,000'
+p18
+sb.

@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Basic Materials'
+p4
+sS'name'
+p5
+S'AIR LIQUIDE'
+p6
+sS'float_shares'
+p7
+S'   342,865,000'
+p8
+sS'symbol'
+p9
+S'AI.PA'
+p10
+sS'start_date'
+p11
+S'2000-01-03'
+p12
+sS'currency'
+p13
+S'EUR'
+p14
+sS'industry'
+p15
+S'Chemicals - Major Diversified'
+p16
+sS'shares_outstanding'
+p17
+S'   343,167,000'
+p18
+sb.

@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Services'
+p4
+sS'name'
+p5
+S'Yum! Brands, Inc.'
+p6
+sS'float_shares'
+p7
+S'   435,659,000'
+p8
+sS'symbol'
+p9
+S'YUM'
+p10
+sS'start_date'
+p11
+S'1997-09-17'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Restaurants'
+p16
+sS'shares_outstanding'
+p17
+S'   437,492,000'
+p18
+sb.

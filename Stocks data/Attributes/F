@@ -1,0 +1,36 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Consumer Goods'
+p4
+sS'name'
+p5
+S'Ford Motor Compan'
+p6
+sS'float_shares'
+p7
+S'  3,535,059,000'
+p8
+sS'symbol'
+p9
+S'F'
+sS'start_date'
+p10
+S'1972-06-01'
+p11
+sS'currency'
+p12
+S'USD'
+p13
+sS'industry'
+p14
+S'Auto Manufacturers - Major'
+p15
+sS'shares_outstanding'
+p16
+S'  3,878,458,000'
+p17
+sb.

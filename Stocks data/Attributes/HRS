@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Technology'
+p4
+sS'name'
+p5
+S'Harris Corporatio'
+p6
+sS'float_shares'
+p7
+S'   104,232,000'
+p8
+sS'symbol'
+p9
+S'HRS'
+p10
+sS'start_date'
+p11
+S'1981-12-31'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Communication Equipment'
+p16
+sS'shares_outstanding'
+p17
+S'   104,591,000'
+p18
+sb.

@@ -1,0 +1,34 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Technology'
+sS'name'
+p4
+S'ARM'
+p5
+sS'float_shares'
+p6
+S'N/A'
+p7
+sS'symbol'
+p8
+S'ARM'
+p9
+sS'start_date'
+p10
+S' '
+sS'currency'
+p11
+S'LML'
+p12
+sS'industry'
+p13
+S'Semiconductor - Broad Line'
+sS'shares_outstanding'
+p14
+S'N/A'
+p15
+sb.

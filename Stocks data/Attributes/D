@@ -1,0 +1,36 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Utilities'
+p4
+sS'name'
+p5
+S'Dominion Resource'
+p6
+sS'float_shares'
+p7
+S'   579,841,000'
+p8
+sS'symbol'
+p9
+S'D'
+sS'start_date'
+p10
+S'1990-01-02'
+p11
+sS'currency'
+p12
+S'USD'
+p13
+sS'industry'
+p14
+S'Electric Utilities'
+p15
+sS'shares_outstanding'
+p16
+S'   582,667,000'
+p17
+sb.

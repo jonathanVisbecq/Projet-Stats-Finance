@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Financial'
+p4
+sS'name'
+p5
+S'Mastercard Incorp'
+p6
+sS'float_shares'
+p7
+S'  1,151,102,000'
+p8
+sS'symbol'
+p9
+S'MA'
+p10
+sS'start_date'
+p11
+S'2006-05-25'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Credit Services'
+p16
+sS'shares_outstanding'
+p17
+S'  1,152,855,000'
+p18
+sb.

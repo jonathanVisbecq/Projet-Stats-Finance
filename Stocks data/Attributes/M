@@ -1,0 +1,36 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Services'
+p4
+sS'name'
+p5
+S"Macy's Inc Common"
+p6
+sS'float_shares'
+p7
+S'   351,852,000'
+p8
+sS'symbol'
+p9
+S'M'
+sS'start_date'
+p10
+S'1992-02-05'
+p11
+sS'currency'
+p12
+S'USD'
+p13
+sS'industry'
+p14
+S'Department Stores'
+p15
+sS'shares_outstanding'
+p16
+S'   353,126,000'
+p17
+sb.

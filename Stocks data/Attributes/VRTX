@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Healthcare'
+p4
+sS'name'
+p5
+S'Vertex Pharmaceut'
+p6
+sS'float_shares'
+p7
+S'   234,809,000'
+p8
+sS'symbol'
+p9
+S'VRTX'
+p10
+sS'start_date'
+p11
+S'1991-07-24'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Biotechnology'
+p16
+sS'shares_outstanding'
+p17
+S'   236,136,000'
+p18
+sb.

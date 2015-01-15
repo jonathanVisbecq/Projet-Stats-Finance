@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Technology'
+p4
+sS'name'
+p5
+S'LEGRAND'
+p6
+sS'float_shares'
+p7
+S'   243,970,000'
+p8
+sS'symbol'
+p9
+S'LR.PA'
+p10
+sS'start_date'
+p11
+S'2006-04-07'
+p12
+sS'currency'
+p13
+S'EUR'
+p14
+sS'industry'
+p15
+S'Diversified Electronics'
+p16
+sS'shares_outstanding'
+p17
+S'   265,545,000'
+p18
+sb.

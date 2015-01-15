@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Services'
+p4
+sS'name'
+p5
+S'Darden Restaurant'
+p6
+sS'float_shares'
+p7
+S'   119,901,000'
+p8
+sS'symbol'
+p9
+S'DRI'
+p10
+sS'start_date'
+p11
+S'1995-05-09'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Restaurants'
+p16
+sS'shares_outstanding'
+p17
+S'   132,647,000'
+p18
+sb.

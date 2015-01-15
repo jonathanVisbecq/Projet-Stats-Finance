@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Financial'
+p4
+sS'name'
+p5
+S'Hartford Financia'
+p6
+sS'float_shares'
+p7
+S'   430,506,000'
+p8
+sS'symbol'
+p9
+S'HIG'
+p10
+sS'start_date'
+p11
+S'1995-12-15'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Property & Casualty Insurance'
+p16
+sS'shares_outstanding'
+p17
+S'   431,481,000'
+p18
+sb.

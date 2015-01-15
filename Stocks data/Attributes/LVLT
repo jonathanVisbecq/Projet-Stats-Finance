@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Technology'
+p4
+sS'name'
+p5
+S'Level 3 Communica'
+p6
+sS'float_shares'
+p7
+S'   180,054,000'
+p8
+sS'symbol'
+p9
+S'LVLT'
+p10
+sS'start_date'
+p11
+S'1998-03-31'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Diversified Communication Services'
+p16
+sS'shares_outstanding'
+p17
+S'   238,293,000'
+p18
+sb.

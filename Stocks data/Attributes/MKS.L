@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Services'
+p4
+sS'name'
+p5
+S'MARKS & SPENCER'
+p6
+sS'float_shares'
+p7
+S'  1,483,061,000'
+p8
+sS'symbol'
+p9
+S'MKS.L'
+p10
+sS'start_date'
+p11
+S'1988-07-01'
+p12
+sS'currency'
+p13
+S'GBp'
+p14
+sS'industry'
+p15
+S'Department Stores'
+p16
+sS'shares_outstanding'
+p17
+S'  1,631,099,000'
+p18
+sb.

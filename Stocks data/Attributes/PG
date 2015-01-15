@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Consumer Goods'
+p4
+sS'name'
+p5
+S'Procter & Gamble'
+p6
+sS'float_shares'
+p7
+S'  2,698,011,000'
+p8
+sS'symbol'
+p9
+S'PG'
+p10
+sS'start_date'
+p11
+S'1970-01-02'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Personal Products'
+p16
+sS'shares_outstanding'
+p17
+S'  2,702,118,000'
+p18
+sb.

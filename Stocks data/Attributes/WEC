@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Utilities'
+p4
+sS'name'
+p5
+S'Wisconsin Energy'
+p6
+sS'float_shares'
+p7
+S'   224,834,000'
+p8
+sS'symbol'
+p9
+S'WEC'
+p10
+sS'start_date'
+p11
+S'1990-01-02'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Electric Utilities'
+p16
+sS'shares_outstanding'
+p17
+S'   225,517,000'
+p18
+sb.

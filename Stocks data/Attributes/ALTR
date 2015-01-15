@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Technology'
+p4
+sS'name'
+p5
+S'Altera Corporatio'
+p6
+sS'float_shares'
+p7
+S'   303,542,000'
+p8
+sS'symbol'
+p9
+S'ALTR'
+p10
+sS'start_date'
+p11
+S'1988-04-04'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Semiconductor - Specialized'
+p16
+sS'shares_outstanding'
+p17
+S'   304,816,000'
+p18
+sb.

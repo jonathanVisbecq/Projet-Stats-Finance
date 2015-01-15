@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Financial'
+p4
+sS'name'
+p5
+S'Capital One Finan'
+p6
+sS'float_shares'
+p7
+S'   556,126,000'
+p8
+sS'symbol'
+p9
+S'COF'
+p10
+sS'start_date'
+p11
+S'1994-11-16'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Credit Services'
+p16
+sS'shares_outstanding'
+p17
+S'   559,900,000'
+p18
+sb.

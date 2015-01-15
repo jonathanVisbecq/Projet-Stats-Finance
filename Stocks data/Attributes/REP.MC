@@ -1,0 +1,35 @@
+(i__main__
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Basic Materials'
+sS'name'
+p4
+S'REP.MC'
+p5
+sS'float_shares'
+p6
+S'N/A'
+p7
+sS'symbol'
+p8
+S'REP.MC'
+p9
+sS'start_date'
+p10
+S'2000-01-03'
+p11
+sS'currency'
+p12
+S'|v'
+p13
+sS'industry'
+p14
+S'Independent Oil & Gas'
+sS'shares_outstanding'
+p15
+S'N/A'
+p16
+sb.

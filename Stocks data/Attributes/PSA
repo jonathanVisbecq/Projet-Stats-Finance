@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Financial'
+p4
+sS'name'
+p5
+S'Public Storage Co'
+p6
+sS'float_shares'
+p7
+S'   145,236,000'
+p8
+sS'symbol'
+p9
+S'PSA'
+p10
+sS'start_date'
+p11
+S'1980-11-18'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'REIT - Industrial'
+p16
+sS'shares_outstanding'
+p17
+S'   172,418,000'
+p18
+sb.

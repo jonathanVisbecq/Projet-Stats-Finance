@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'N/A'
+p4
+sS'name'
+p5
+S'KERING'
+p6
+sS'float_shares'
+p7
+S'    74,064,000'
+p8
+sS'symbol'
+p9
+S'KER.PA'
+p10
+sS'start_date'
+p11
+S'2000-01-03'
+p12
+sS'currency'
+p13
+S'EUR'
+p14
+sS'industry'
+p15
+S'N/A'
+p16
+sS'shares_outstanding'
+p17
+S'   126,185,000'
+p18
+sb.

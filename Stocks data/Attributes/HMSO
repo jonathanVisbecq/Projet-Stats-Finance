@@ -1,0 +1,36 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'N/A'
+p4
+sS'name'
+p5
+S'HEMIS CORPORATION'
+p6
+sS'float_shares'
+p7
+S'           0'
+p8
+sS'symbol'
+p9
+S'HMSO'
+p10
+sS'start_date'
+p11
+S' '
+sS'currency'
+p12
+S'USD'
+p13
+sS'industry'
+p14
+S'N/A'
+p15
+sS'shares_outstanding'
+p16
+S'    76,468,000'
+p17
+sb.

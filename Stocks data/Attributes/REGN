@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Healthcare'
+p4
+sS'name'
+p5
+S'Regeneron Pharmac'
+p6
+sS'float_shares'
+p7
+S'    73,277,000'
+p8
+sS'symbol'
+p9
+S'REGN'
+p10
+sS'start_date'
+p11
+S'1991-04-02'
+p12
+sS'currency'
+p13
+S'USD'
+p14
+sS'industry'
+p15
+S'Biotechnology'
+p16
+sS'shares_outstanding'
+p17
+S'   100,390,000'
+p18
+sb.

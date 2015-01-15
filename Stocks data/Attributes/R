@@ -1,0 +1,36 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Services'
+p4
+sS'name'
+p5
+S'Ryder System, Inc'
+p6
+sS'float_shares'
+p7
+S'    52,242,000'
+p8
+sS'symbol'
+p9
+S'R'
+sS'start_date'
+p10
+S'1980-01-02'
+p11
+sS'currency'
+p12
+S'USD'
+p13
+sS'industry'
+p14
+S'Rental & Leasing Services'
+p15
+sS'shares_outstanding'
+p16
+S'    53,039,000'
+p17
+sb.
