@@ -90,13 +90,14 @@ class DataLoader:
     #--------------------------------------------------------------------------
    
     @staticmethod
-    def fetch_historical_prices(symbol,save=False):
+    def fetch_historical_prices(symbol,save=False,source="yahoo"):
         """
         Get historical adjusted close prices from the data provider and save it
         """
         
-        prices = webData.DataReader(symbol, "yahoo", DataLoader.START_DATE, DataLoader.END_DATE)
+        prices = webData.DataReader(symbol, source, DataLoader.START_DATE, DataLoader.END_DATE)
         prices = prices['Adj Close']
+
         prices.name = "Price"
         
         if save: # Save prices in the Prices folder
@@ -151,7 +152,7 @@ class DataLoader:
         """
         """
         path_price =  DataLoader.PATH_PREFIX + "Prices/" + symbol + ".csv"
-        prices.to_csv(path_or_buf=path_price,header=True)    
+        prices.to_csv(path=path_price,header=True)    
 
     #--------------------------------------------------------------------------
 
@@ -166,7 +167,7 @@ class DataLoader:
     #--------------------------------------------------------------------------
             
     @staticmethod
-    def save_attribute(symbol,attributes):
+    def save_attributes(symbol,attributes):
         """
         """
         path_attr = DataLoader.PATH_PREFIX + "Attributes/" + symbol
@@ -227,7 +228,8 @@ class DataLoader:
 
     @staticmethod
     def read_prices_attributes(symbol):
-        
+        """
+        """
         if not symbol in DataLoader.symbols():
             warnings.warn("Symbol not found in list of symbols. ")
         
@@ -240,6 +242,7 @@ class DataLoader:
 
     @staticmethod
     def read_index_components(index_name):
-
+        """
+        """
         return DataLoader.read_symbols_from_file(DataLoader.PATH_PREFIX + "Lists of symbols/" + index_name)
     

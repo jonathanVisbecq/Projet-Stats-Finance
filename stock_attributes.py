@@ -9,7 +9,6 @@ import yahoo_finance as yf
 class StockAttributes:
     
     def __init__(self,name="",symbol="",currency="",sector="",industry="",shares_outstanding=0,float_shares=0,start_date=""):
-        # Dictionnary to store info on the stock:
         # - name of the company without qualifiers (Inc., Ltd., SA, ...)
         self.name = name        
         # - listed symbol of the stock

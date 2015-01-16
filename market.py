@@ -1,32 +1,24 @@
 # -*- coding: utf-8 -*-
 
-import numpy as np
+
+import pandas as pd
 
 from dataloader import DataLoader
-from portfolio import Portfolio
+
 
 class Market:
     
-    def __init__(self,portfolio,market_index):
+    def __init__(self,market_index):
         
-        # Prevent building a market with no stocks
-        if portfolio.nb_stocks()==0:
-            raise RuntimeError("Porfolio must contain at least one stock")
-        
-        # Portfolio of stocks consituting the market
-        self.portfolio = portfolio
-        # Index representing the performance of the market. If market_index is provided,
-        # it is used as a the representing index.
+        # Index representing the performance of the market
         self.market_index = market_index
         
-    def get_first_date(self):
+    def starting_date(self):
         """
         Return the starting date for the index series 
         """
-        first_date = self.market_index[0:1].index[0].date()
-        first_date = first_date.isoformat()[0:10]
-        
-        return first_date
+        return self.market_index.index[0]
+
         
                 
     #--------------------------------------------------------------------------
@@ -36,13 +28,10 @@ class Market:
     @staticmethod
     def create_index_market(index_name):
         """
-        Create a market based on an index: the portfolio is constituted by all the stocks
-        contributing to the index, and the mark_index series is the index
+        Create a market index
         """
-        portfolio = Portfolio.create_index_portfolio(index_name=index_name)
-        market_index = DataLoader.load_prices(symbol=index_name)
-        
-        return Market(portfolio=portfolio,market_index=market_index)
+        market_index = pd.read_csv(DataLoader.PATH_PREFIX+"Prices/"+index_name+".csv",index_col=0,parse_dates=True,header=0,squeeze=True)
+        return Market(market_index=market_index)
              
 
             
