@@ -13,22 +13,26 @@ class RiskFreeRate:
         self.currency = currency
         
     
-    def get_first_date(self):
+    def get_first_date(self,as_string=False):
         """
-        Return the starting date 
+        Return the starting date(as datetime.date object)
         """
-        first_date = self.risk_free_rate[0:1].index[0].date()
-        first_date = first_date.isoformat()[0:10]
+        first_date = self.risk_free_rate.index[0].date()
+        
+        if as_string:
+            first_date = first_date.isoformat()[0:10]
         
         return first_date
         
         
-    def get_last_date(self):
+    def get_last_date(self,as_string=False):
         """
-        Return the last date 
+        Return the last date (as datetime.date object)
         """
-        last_date = self.risk_free_rate[-1:].index[0].date()
-        last_date = last_date.isoformat()[0:10]
+        last_date = self.risk_free_rate.index[0].date()
+        
+        if as_string:        
+            last_date = last_date.isoformat()[0:10]
         
         return last_date
         

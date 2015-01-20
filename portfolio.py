@@ -10,7 +10,7 @@ from global_data import index_currency
 
 class Portfolio:
     
-    def __init__(self,currency,symbols=[]):
+    def __init__(self,currency,symbols=[],start_dates=None):
         # Store the symbols for the stocks in the portfolio. The actual timeseries
         # are not stored.
         self.stocks = symbols
@@ -30,9 +30,12 @@ class Portfolio:
         # In case a warning is issued, it has to be dealt with manually        
         self._check_currency()
 
-        # Sort stocks and starting dates from the oldest the the newest
-        self.stocks,self.start_dates = self._sort_by_start_date() 
-        
+        if start_dates is None:
+            # Sort stocks and starting dates from the oldest the the newest
+            self.stocks,self.start_dates = self._sort_by_start_date() 
+        else:
+            # Assume stocks and start_dates are already sorted
+            self.start_dates = start_dates
 
     #--------------------------------------------------------------------------        
 
@@ -62,7 +65,7 @@ class Portfolio:
 
     def stocks_with_data(self,nb_returns,with_quotes=False):
          """
-         Return a list of the stocks for which there is at least 'nb_returns'
+         Return the portfolio of the stocks for which there is at least 'nb_returns'
          historical returns available (ie at least 'nb_returns'+1 daily records),
          and the associated quotes if required
          """
@@ -76,10 +79,12 @@ class Portfolio:
              else:
                  idx -= 1
                  
-         stocks = self.stocks[0:idx+1]
+         stocks = Portfolio(currency=self.currency,
+                            symbols=self.stocks[0:idx+1],
+                            start_dates=self.start_dates[0:idx+1])
    
          if with_quotes:
-             quotes = Portfolio.agreggate_quotes(stocks=stocks,start_date=self.start_dates[0])
+             quotes = Portfolio.agreggate_quotes(stocks=stocks.stocks,start_date=self.start_dates[0])
              return stocks,quotes
          else:
              return stocks

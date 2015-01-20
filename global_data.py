@@ -9,4 +9,8 @@ index_currency = {"SP500":"USD",
 interest_rates_currency = {"LIBOR ON USD":"USD",
                            "LIBOR ON EUR":"EUR",
                            "LIBOR ON GBP":"GBP",
-                           "FED FUNDS RATES":"USD"}  
+                           "FED FUNDS RATES":"USD"}
+                           
+default_rates = {"USD":"LIBOR ON USD",
+                 "EUR":"LIBOR ON EUR",
+                 "GBP":"LIBOR ON GBP"}
