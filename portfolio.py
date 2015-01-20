@@ -21,6 +21,7 @@ class Portfolio:
         # Sort stocks and starting dates from the oldest the the newest
         self.stocks,self.start_dates = self._sort_by_start_date()        
         # Check if all stocks have the same last date (specified in class DataLoader)
+        # In case a warning is issued, it has to dealt with manually        
         self._check_last_date()
 
     #--------------------------------------------------------------------------        
@@ -44,11 +45,11 @@ class Portfolio:
 
     #--------------------------------------------------------------------------
 
-    def stocks_with_data(self,nb_returns):
+    def stocks_with_data(self,nb_returns,with_quotes=False):
          """
          Return a list of the stocks for which there is at least 'nb_returns'
          historical returns available (ie at least 'nb_returns'+1 daily records),
-         and the list of the other stocks (in this order)
+         and the associated quotes if required
          """
          idx = len(self.stocks)-1
          
@@ -60,16 +61,49 @@ class Portfolio:
              else:
                  idx -= 1
                  
-         if idx<0:
-             return [],self.stocks
+         stocks = self.stocks[0:idx+1]
+   
+         if with_quotes:
+             quotes = Portfolio.agreggate_quotes(stocks=stocks,start_date=self.start_dates[0])
+             return stocks,quotes
          else:
-             return self.stocks[0:idx+1],self.stocks[idx+1:]
+             return stocks
+    
+    
+    
+    #--------------------------------------------------------------------------
+    
+    @staticmethod
+    def agreggate_quotes(stocks,start_date=DataLoader.START_DATE,end_date=DataLoader.END_DATE,align=True):
+        """
+        Return a pandas Dataframe (one stock per column)
+        No check provided for ensuring consistent currency between stocks
+        """
+        stock_prices = {}
+
+        for stock in stocks:
+            p,_ = DataLoader.read_prices_attributes(stock)
+            stock_prices[stock] = p[start_date:end_date]
+            
+        stock_prices = pd.DataFrame(data=stock_prices)
+        
+        if align:
+            stock_prices = stock_prices.fillna(method='ffill')
+            # Remaining NaN (first ones) are dealt with using backward propagation
+            stock_prices = stock_prices.fillna(method='bfill')
+            
+        return stock_prices
+
     
     ###########################################################################
     # Internal functions    
     ########################################################################### 
     
     def _start_date(self,stock):
+        """
+        Return the first date for the timeseries associated to the stock as a
+        Datetime object
+        """
         _,a = DataLoader.read_prices_attributes(symbol=stock)
         start_date = pd.to_datetime(a.start_date,coerce=True)
         
