@@ -4,6 +4,7 @@
 import pandas as pd
 
 from dataloader import DataLoader
+from global_data import index_currency
 
 
 class Market:
@@ -34,16 +35,10 @@ class Market:
         """
         Create a market index
         """
-        
-        currency = {"SP500":"USD",
-                    "FTSE100":"GBP",
-                    "EURSTOXX50":"EUR",
-                    "DAX30":"EUR",
-                    "CAC40":"EUR"}  
                    
         market_index = pd.read_csv(DataLoader.PATH_PREFIX+"Prices/"+index_name+".csv",index_col=0,parse_dates=True,header=0,squeeze=True)
         
-        return Market(market_index=market_index,currency=currency[index_name])
+        return Market(market_index=market_index,currency=index_currency[index_name])
              
 
             

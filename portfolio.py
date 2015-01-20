@@ -6,23 +6,33 @@ import warnings
 import bisect
 
 from dataloader import DataLoader
+from global_data import index_currency
 
 class Portfolio:
     
-    def __init__(self,symbols=[]):
+    def __init__(self,currency,symbols=[]):
         # Store the symbols for the stocks in the portfolio. The actual timeseries
         # are not stored.
         self.stocks = symbols
+        
+        # Currency shared by among all stocks
+        self.currency = currency
 
         # Store the starting date and ending_date of the historical records for each stock.
         # Dates are stored as pandas' datetime objects 
         self.start_dates = []
                
-        # Sort stocks and starting dates from the oldest the the newest
-        self.stocks,self.start_dates = self._sort_by_start_date()        
         # Check if all stocks have the same last date (specified in class DataLoader)
-        # In case a warning is issued, it has to dealt with manually        
+        # In case a warning is issued, it has to be dealt with manually        
         self._check_last_date()
+
+        # Check if all stocks are expressed using the same currency
+        # In case a warning is issued, it has to be dealt with manually        
+        self._check_currency()
+
+        # Sort stocks and starting dates from the oldest the the newest
+        self.stocks,self.start_dates = self._sort_by_start_date() 
+        
 
     #--------------------------------------------------------------------------        
 
@@ -37,6 +47,11 @@ class Portfolio:
         """
         Add a stock to the portfolio (and keep the stocks sorted by starting date)
         """        
+        # Currency used for the new stock must be consistent
+        _,a = DataLoader.read_prices_attributes(stock)
+        if a.currency != self.currency:
+            raise Exception("Stock is expressed in the wrong currency: {} (should be {})".format(a.currency,self.currency))        
+        
         start_date = self._start_date(stock)
         idx = bisect.bisect_left(self.start_dates,start_date)
         
@@ -148,6 +163,17 @@ class Portfolio:
             if last_date != DataLoader.END_DATE:
                 warnings.warn("Last date of {} is different: {} and {}".format(stock,last_date,DataLoader.END_DATE))
         
+    #--------------------------------------------------------------------------        
+    
+    def _check_currency(self):
+        """
+        """
+        for stock in self.stocks:
+            _,a = DataLoader.read_prices_attributes(stock)
+            
+            if a.currency != self.currency:
+                warnings.warn("Currency used for stock ({}) and currency of portfolio ({}) differ".format(a.currency,currency))
+        
     ###########################################################################
     # Fonctions to create predefined portfolios
     ###########################################################################
@@ -157,4 +183,5 @@ class Portfolio:
         """
         Create a porfolio with all the constituents of a given index
         """
-        return Portfolio(symbols=DataLoader.read_index_components(index_name))
+                   
+        return Portfolio(currency=index_currency[index_name],symbols=DataLoader.read_index_components(index_name))

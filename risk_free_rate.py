@@ -3,6 +3,7 @@
 import pandas as pd
 
 from dataloader import DataLoader
+from global_data import interest_rates_currency
 
 
 class RiskFreeRate:
@@ -39,15 +40,11 @@ class RiskFreeRate:
     
     @staticmethod
     def create_rates(name):
-
-        currency = {"LIBOR ON USD":"USD",
-                   "LIBOR ON EUR":"EUR",
-                   "LIBOR ON GBP":"GBP",
-                   "FED FUNDS RATES":"USD"}   
-                            
+        """
+        """                 
         risk_free_rate = pd.read_csv(DataLoader.PATH_PREFIX+"Rates/"+name+".csv",index_col=0,parse_dates=True,header=0,squeeze=True)
         
-        return RiskFreeRate(risk_free_rate=risk_free_rate,currency=currency[name])
+        return RiskFreeRate(risk_free_rate=risk_free_rate,currency=interest_rates_currency[name])
         
         
         
