@@ -1,4 +1,4 @@
-(i__main__
+(istock_attributes
 StockAttributes
 p1
 (dp2
@@ -23,11 +23,13 @@ S'2000-01-03'
 p11
 sS'currency'
 p12
-NsS'industry'
+S'EUR'
 p13
+sS'industry'
+p14
 S'Foreign Regional Banks'
 sS'shares_outstanding'
-p14
-S'N/A'
 p15
+S'N/A'
+p16
 sb.

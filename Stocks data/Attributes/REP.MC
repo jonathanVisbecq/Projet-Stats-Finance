@@ -1,4 +1,4 @@
-(i__main__
+(istock_attributes
 StockAttributes
 p1
 (dp2
@@ -23,7 +23,7 @@ S'2000-01-03'
 p11
 sS'currency'
 p12
-S'|v'
+S'EUR'
 p13
 sS'industry'
 p14
