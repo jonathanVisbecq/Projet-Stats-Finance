@@ -1,0 +1,37 @@
+(istock_attributes
+StockAttributes
+p1
+(dp2
+S'sector'
+p3
+S'Technology'
+p4
+sS'name'
+p5
+S'INFINEON TECHNOLO'
+p6
+sS'float_shares'
+p7
+S'  1,121,716,000'
+p8
+sS'symbol'
+p9
+S'IFX.DE'
+p10
+sS'start_date'
+p11
+S'2000-03-14'
+p12
+sS'currency'
+p13
+S'EUR'
+p14
+sS'industry'
+p15
+S'Semiconductor - Broad Line'
+p16
+sS'shares_outstanding'
+p17
+S'  1,121,739,000'
+p18
+sb.
