@@ -84,7 +84,8 @@ class Portfolio:
                             start_dates=self.start_dates[0:idx+1])
    
          if with_quotes:
-             quotes = Portfolio.agreggate_quotes(stocks=stocks.stocks,start_date=self.start_dates[0])
+             print(stocks.start_dates[-1])
+             quotes = Portfolio.agreggate_quotes(stocks=stocks.stocks,start_date=stocks.start_dates[-1])
              return stocks,quotes
          else:
              return stocks
@@ -166,7 +167,7 @@ class Portfolio:
             last_date = p.last_valid_index().to_datetime()
             
             if last_date != DataLoader.END_DATE:
-                warnings.warn("Last date of {} is different: {} and {}".format(stock,last_date,DataLoader.END_DATE))
+                warnings.warn("Last date of stock {} is different: {} and {}".format(stock,last_date,DataLoader.END_DATE))
         
     #--------------------------------------------------------------------------        
     
@@ -177,7 +178,7 @@ class Portfolio:
             _,a = DataLoader.read_prices_attributes(stock)
             
             if a.currency != self.currency:
-                warnings.warn("Currency used for stock ({}) and currency of portfolio ({}) differ".format(a.currency,currency))
+                warnings.warn("Currency used for stock {} ({}) and currency of portfolio ({}) differ".format(stock,a.currency,self.currency))
         
     ###########################################################################
     # Fonctions to create predefined portfolios
@@ -190,3 +191,26 @@ class Portfolio:
         """
                    
         return Portfolio(currency=index_currency[index_name],symbols=DataLoader.read_index_components(index_name))
+        
+        
+        
+if __name__=="__main__":
+    
+    s = DataLoader.read_index_components("FTSE100")
+    
+    for stock in s[32:33]:
+        p,_ = DataLoader.read_prices_attributes(stock)
+        print(stock)
+        p.plot(sharex=False)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        

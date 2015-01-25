@@ -24,7 +24,7 @@ S'2005-07-15'
 p12
 sS'currency'
 p13
-S'GBp'
+S'GBP'
 p14
 sS'industry'
 p15

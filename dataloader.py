@@ -11,13 +11,6 @@ import pandas.io.data as webData
 from stock_attributes import StockAttributes
 
 
-"""
-Load only symbols for which we have everything (attributes, prices,...) so as to ease after treatment of data
-
-
-
-"""
-
 
 class DataLoader: 
     # Path for saving the .csv files
@@ -193,6 +186,29 @@ class DataLoader:
         if (symbols is not None) or (symbol is not None):
             pickle.dump(s,open(DataLoader.PATH_PREFIX+"Symbols","w"))
             
+    #--------------------------------------------------------------------------
+            
+    @staticmethod            
+    def save_results(results,study_type,results_type,erase=False,params=None):    
+        """
+        Save results and parameters from a study
+        """
+        # File for storing the results for a study
+        path_results = DataLoader.PATH_PREFIX+"Results/"+study_type+"/"+results_type+"/Results"
+        # File for storing the parameters for a study
+        path_params = DataLoader.PATH_PREFIX+"Results/"+study_type+"/"+results_type+"/Params"
+        
+        if os.path.exists(path_results) and not erase:
+            raise Exception("Result file already exists for this study")
+        else:        
+            pickle.dump(results,open(path_results,"w"))
+           
+        if params is not None:   
+            if os.path.exists(path_params) and not erase:
+                raise Exception("Result file already exists for this study")
+            else:        
+                pickle.dump(params,open(path_params,"w"))
+            
     ###########################################################################
     # Functions to read data that has already been saved
     ###########################################################################
@@ -246,3 +262,26 @@ class DataLoader:
         """
         return DataLoader.read_symbols_from_file(DataLoader.PATH_PREFIX + "Lists of symbols/" + index_name)
     
+    #--------------------------------------------------------------------------
+    
+    @staticmethod
+    def read_results(study_type,results_type):
+        """
+        Returns results,parameters for a given study
+        """    
+        # Path to the results
+        path_results = DataLoader.PATH_PREFIX+"Results/"+study_type+"/"+results_type+"/Results"
+        # Path the parameters 
+        path_params = DataLoader.PATH_PREFIX+"Results/"+study_type+"/"+results_type+"/Params"
+        
+        if not os.path.exists(path_results):
+            raise Exception("File {} does not exist".format(path_results))
+        else:        
+            results = pickle.load(open(path_results,"r"))
+       
+        if not os.path.exists(path_params):
+            raise Exception("File {} does not exist".format(path_params))
+        else:        
+            params = pickle.load(open(path_params,"r"))
+            
+        return results,params

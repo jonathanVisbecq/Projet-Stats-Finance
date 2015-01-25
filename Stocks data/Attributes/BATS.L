@@ -24,7 +24,7 @@ S'1995-01-03'
 p12
 sS'currency'
 p13
-S'GBp'
+S'GBP'
 p14
 sS'industry'
 p15

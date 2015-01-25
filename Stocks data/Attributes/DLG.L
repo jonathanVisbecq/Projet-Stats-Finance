@@ -24,7 +24,7 @@ S'2012-10-11'
 p12
 sS'currency'
 p13
-S'GBp'
+S'GBP'
 p14
 sS'industry'
 p15
