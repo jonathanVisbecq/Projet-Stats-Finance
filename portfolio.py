@@ -51,7 +51,8 @@ class Portfolio:
         Add a stock to the portfolio (and keep the stocks sorted by starting date)
         """        
         # Currency used for the new stock must be consistent
-        _,a = DataLoader.read_prices_attributes(stock)
+        a = DataLoader.read_attributes(stock)
+        
         if a.currency != self.currency:
             raise Exception("Stock is expressed in the wrong currency: {} (should be {})".format(a.currency,self.currency))        
         
@@ -63,35 +64,31 @@ class Portfolio:
 
     #--------------------------------------------------------------------------
 
-    def stocks_with_data(self,nb_returns,with_quotes=False):
+    def stocks_with_data(self,nb_returns=None,first_date_avbl=None,with_cplt=False):
          """
-         Return the portfolio of the stocks for which there is at least 'nb_returns'
+         If nb_returns provided:
+         returns the portfolio with all stocks having at least 'nb_returns'
          historical returns available (ie at least 'nb_returns'+1 daily records),
-         and the associated quotes if required
-         """
-         idx = len(self.stocks)-1
          
-         while idx>=0:
-             prices,_ = DataLoader.read_prices_attributes(self.stocks[idx])
+         If first_date_avbl provided:
+         returns the portfolio with records starting from 'first_date_avbl' or 
+         earlier
+         
+         If both provided, returns the intersection of the two previous sets
+         
+         The portfolio of the stocks not meeting the requirements is also
+         returned if 'with_cplt' is true         
+         """
+         stocks = self         
+         
+         if nb_returns is not None:
+             stocks = stocks._stocks_nbReturns(nb_returns,with_cplt=with_cplt)
              
-             if len(prices) >= (nb_returns+1):
-                 break;
-             else:
-                 idx -= 1
-                 
-         stocks = Portfolio(currency=self.currency,
-                            symbols=self.stocks[0:idx+1],
-                            start_dates=self.start_dates[0:idx+1])
-   
-         if with_quotes:
-             print(stocks.start_dates[-1])
-             quotes = Portfolio.agreggate_quotes(stocks=stocks.stocks,start_date=stocks.start_dates[-1])
-             return stocks,quotes
-         else:
-             return stocks
+         if first_date_avbl is not None:
+             stocks = stocks._stocks_firstDateAvbl(first_date_avbl,with_cplt)
     
-    
-    
+         return stocks
+             
     #--------------------------------------------------------------------------
     
     @staticmethod
@@ -180,6 +177,54 @@ class Portfolio:
             if a.currency != self.currency:
                 warnings.warn("Currency used for stock {} ({}) and currency of portfolio ({}) differ".format(stock,a.currency,self.currency))
         
+    #--------------------------------------------------------------------------         
+    
+    def _stocks_nbReturns(self,nb_returns,with_cplt=False):
+        """
+        """
+        idx = len(self.stocks)-1
+         
+        while idx>=0:
+            prices = DataLoader.read_prices(self.stocks[idx])
+             
+            if len(prices) >= (nb_returns+1):
+                break;
+            else:
+                idx -= 1
+                 
+        stocks = Portfolio(currency=self.currency,
+                           symbols=self.stocks[0:idx+1],
+                           start_dates=self.start_dates[0:idx+1])
+
+        if with_cplt:                            
+            remains = Portfolio(currency=self.currency,
+                                symbols=self.stocks[idx+1:],
+                                start_dates=self.start_dates[idx+1:])
+                                                        
+            return stocks,remains
+        else:
+            return stocks
+
+    #--------------------------------------------------------------------------         
+
+    def _stocks_firstDateAvbl(self,first_date_avbl,with_cplt=False):
+        """
+        """
+        idx = bisect.bisect_right(self.start_dates,pd.Timestamp(first_date_avbl))
+        
+        stocks = Portfolio(currency=self.currency,
+                           symbols=self.stocks[0:idx],
+                           start_dates=self.start_dates[0:idx])
+                                                      
+        if with_cplt:                            
+            remains = Portfolio(currency=self.currency,
+                                symbols=self.stocks[idx+1:],
+                                start_dates=self.start_dates[idx+1:])
+                                                        
+            return stocks,remains
+        else:
+            return stocks
+            
     ###########################################################################
     # Fonctions to create predefined portfolios
     ###########################################################################
@@ -192,16 +237,7 @@ class Portfolio:
                    
         return Portfolio(currency=index_currency[index_name],symbols=DataLoader.read_index_components(index_name))
         
-        
-        
-if __name__=="__main__":
-    
-    s = DataLoader.read_index_components("FTSE100")
-    
-    for stock in s[32:33]:
-        p,_ = DataLoader.read_prices_attributes(stock)
-        print(stock)
-        p.plot(sharex=False)
+
         
         
         

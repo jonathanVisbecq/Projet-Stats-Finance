@@ -241,18 +241,34 @@ class DataLoader:
         return symbols
         
     #--------------------------------------------------------------------------
-
+    
     @staticmethod
-    def read_prices_attributes(symbol):
+    def read_prices(symbol):
         """
         """
         if not symbol in DataLoader.symbols():
             warnings.warn("Symbol not found in list of symbols. ")
         
-        prices = pd.read_csv(DataLoader.PATH_PREFIX+"Prices/"+symbol+".csv",index_col=0,parse_dates=True,header=0,squeeze=True)
-        attributes =  pickle.load(open(DataLoader.PATH_PREFIX+"Attributes/"+symbol,"r"))       
-            
-        return prices,attributes
+        return pd.read_csv(DataLoader.PATH_PREFIX+"Prices/"+symbol+".csv",index_col=0,parse_dates=True,header=0,squeeze=True)
+           
+    #--------------------------------------------------------------------------
+
+    @staticmethod
+    def read_attributes(symbol):
+        """
+        """
+        if not symbol in DataLoader.symbols():
+            warnings.warn("Symbol not found in list of symbols. ")
+        
+        return pickle.load(open(DataLoader.PATH_PREFIX+"Attributes/"+symbol,"r"))
+
+    #--------------------------------------------------------------------------
+
+    @staticmethod
+    def read_prices_attributes(symbol):
+        """
+        """
+        return DataLoader.read_prices(symbol),DataLoader.read_attributes(symbol)
         
     #--------------------------------------------------------------------------
 

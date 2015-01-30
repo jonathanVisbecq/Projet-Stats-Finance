@@ -65,7 +65,8 @@ if __name__=="__main__":
     rates = RiskFreeRate.create_rates(global_data.default_rates[global_data.index_currency[params["index_name"]]])
     portfolio = Portfolio.create_index_portfolio(params["index_name"])
     
-    stocks,quotes = portfolio.stocks_with_data(nb_returns=params["min_nb_returns_stocks"],with_quotes=True)
+    stocks = portfolio.stocks_with_data(nb_returns=params["min_nb_returns_stocks"])
+    quotes = Portfolio.agreggate_quotes(stocks.stocks,start_date=stocks.start_dates[-1])
     
     # Determine first date
     params["start_date"] = max(stocks.start_dates[-1].date(),rates.get_first_date(),market.get_first_date())
