@@ -2,9 +2,6 @@
 
 import urllib2
 import simplejson
-import warnings
-
-import yahoo_finance as yf
 
 class StockAttributes:
     
