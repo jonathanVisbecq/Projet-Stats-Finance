@@ -4,11 +4,11 @@ p1
 (dp2
 S'sector'
 p3
-S'N/A'
+S'Financial'
 p4
 sS'name'
 p5
-S'Berkshire Hathawa'
+S'Berkshire Hathaway'
 p6
 sS'float_shares'
 p7
@@ -28,7 +28,7 @@ S'USD'
 p14
 sS'industry'
 p15
-S'N/A'
+S'Asset Management'
 p16
 sS'shares_outstanding'
 p17
