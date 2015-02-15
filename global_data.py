@@ -4,7 +4,8 @@ index_currency = {"SP500":"USD",
                   "FTSE100":"GBP",
                   "EURSTOXX50":"EUR",
                   "DAX30":"EUR",
-                  "CAC40":"EUR"} 
+                  "CAC40":"EUR",
+                  "DJIA":"USD"} 
                   
 interest_rates_currency = {"LIBOR ON USD":"USD",
                            "LIBOR ON EUR":"EUR",
